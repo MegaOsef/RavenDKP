@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: RavenDKP
+## Notes: DKP Auction window, for use with SotA
+## Author: ravens
+## Version: 2.1.4-335
+## SavedVariables: RavenDKPDB
+
+RavenDKP.xml
+versioncheck.lua
