@@ -86,7 +86,7 @@ function RavenDKP_OnEvent(event, arg1, arg2, arg3, arg4, arg5)
 end
 
 function RavenDKP_DebugMessage(message)
-	DEFAULT_CHAT_FRAME:AddMessage("|c8040A0F8DEBUG: " .. message .. "|r")
+	--DEFAULT_CHAT_FRAME:AddMessage("|c8040A0F8DEBUG: " .. message .. "|r")
 end
 
 function RavenDKP_OnLoad()
@@ -790,7 +790,7 @@ function RavenDKP_UpdatePlayerDKP()
 	RavenDKP_TimeSinceDKPUpdate = 0
 	local memberCount = GetNumGuildMembers();
 	for n=1,memberCount,1 do
-		local name, _, _, _, _, _, note = GetGuildRosterInfo(n)
+		local name, _, _, _, _, _, _, note = GetGuildRosterInfo(n)
         if name == UnitName("player") then
 		    if not note or note == "" then
 		    	break;
