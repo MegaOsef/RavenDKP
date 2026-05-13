@@ -199,7 +199,7 @@ function RavenDKP_BidXOnEnter(dkp,spec)
 		if specType == "OS" then
 			colorCode = "|cFFFF0000"
 		end
-		SendChatMessage("[RavenDKP] "..colorCode..spec.." "..bidAmount.."|r","RAID")
+		SendChatMessage("[RavenDKP] " .. spec .. " " .. bidAmount, "RAID")
 	end
 end
 
