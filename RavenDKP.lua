@@ -383,7 +383,7 @@ function RavenDKP_MinimapButtonOnClick()
 end
 
 function RavenDKP_OnRaidChat(event, message, sender)
-	local a,_,spec,bid = string.find(message, "%[RavenDKP%] |c%x%x%x%x%x%x%x%x(%a+) (%d+)|r")
+	local a,_,spec,bid = string.find(message, "%[RavenDKP%] (%a+) (%d+)")
 	if spec and bid then
 		local specType = "MS"
 		if string.lower(spec) == "os" then
